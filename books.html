@@ -38,10 +38,16 @@ const itemStyle = {
     color: colors[4]
   }
 };
-const data = [{'name': '文学类',
+const data = 
+[
+  {'name': '文学类',
   'itemStyle': {'color': colors[1]},
-  'children': [{'name': '小说',
-    'children': [{'name': '☆', 'children': [{'name': '命运'}]},
+  'children': 
+  [
+    {'name': '小说',
+    'children': 
+    [
+      {'name': '☆', 'children': [{'name': '命运'}]},
      {'name': '5☆',
       'children': [{'name': '遥远的救世主'},
        {'name': '山月记'},
@@ -247,7 +253,7 @@ option = {
   color: colors,
   series: [
     {
-      type: 'treemap',
+      type: 'sunburst',
       center: ['50%', '48%'],
       data: data,
       sort: function (a, b) {
