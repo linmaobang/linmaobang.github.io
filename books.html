@@ -40,151 +40,1546 @@ const itemStyle = {
 };
 const data = 
 [
-  {'name': '文学类',
-  'itemStyle': {'color': colors[1]},
-  'children': 
-  [
-    {'name': '小说',
-    'children': 
-    [
-      {'name': '☆', 'children': [{'name': '命运'}]},
-     {'name': '5☆',
-      'children': [{'name': '遥远的救世主'},
-       {'name': '山月记'},
-       {'name': '人性的枷锁'},
-       {'name': '漫长的告别'},
-       {'name': '一个叫欧维的男人决定去死'},
-       {'name': '活着'},
-       {'name': '偷影子的人'},
-       {'name': '追风筝的人'},
-       {'name': '杀死一只知更鸟'},
-       {'name': '岛上书店'},
-       {'name': '云边有个小卖部'},
-       {'name': '人生海海'},
-       {'name': '围城'},
-       {'name': '平凡的世界'},
-       {'name': '风之影'}]},
-     {'name': '4☆',
-      'children': [{'name': '遮天'},
-       {'name': '完美世界'},
-       {'name': '变形记'},
-       {'name': '雨中杀手'}]},
-     {'name': '3☆', 'children': [{'name': '源泉'}]}]},
-   {'name': '漫画',
-    'children': [{'name': '4☆', 'children': [{'name': '这是你的星星，请签收'}]}]},
-   {'name': '童话',
-    'children': [{'name': '5☆', 'children': [{'name': '小王子（中英法对照彩绘珍藏版）'}]}]},
-   {'name': '推理',
-    'children': [{'name': '4☆',
-      'children': [{'name': '圣母'}, {'name': '罗杰疑案'}]}]},
-   {'name': '史诗',
-    'children': [{'name': '5☆',
-      'children': [{'name': '荷马史诗·伊利亚特'}, {'name': '荷马史诗·奥德赛'}]}]},
-   {'name': '科幻',
-    'children': [{'name': '5☆', 'children': [{'name': '挽救计划'}]},
-     {'name': '4☆', 'children': [{'name': '时间移民'}]},
-     {'name': '3☆', 'children': [{'name': '玩家'}]}]},
-   {'name': '诗歌',
-    'children': [{'name': '4☆', 'children': [{'name': '读书，带我去山外边的海'}]}]}]},
- {'name': '理论类',
-  'itemStyle': {'color': colors[2]},
-  'children': [{'name': '人生哲学',
-    'children': [{'name': '4☆',
-      'children': [{'name': '生命之书'}, {'name': '银盘中的宝石'}]},
-     {'name': '3☆', 'children': [{'name': '行动瑜伽'}]},
-     {'name': '5☆', 'children': [{'name': '洞见'}, {'name': '人间值得'}]}]},
-   {'name': '生活技巧',
-    'children': [{'name': '4☆', 'children': [{'name': '心流'}]}]},
-   {'name': '物理学',
-    'children': [{'name': '5☆',
-      'children': [{'name': '宇宙'},
-       {'name': '大图景：论生命的起源、意义和宇宙本身'},
-       {'name': '从一到无穷大'},
-       {'name': '世界观'}]}]},
-   {'name': '历史',
-    'children': [{'name': '5☆',
-      'children': [{'name': '翦商'}, {'name': '人类简史'}, {'name': '置身事内'}]},
-     {'name': '4☆', 'children': [{'name': '未来简史'}]}]},
-   {'name': '政治学',
-    'children': [{'name': '5☆', 'children': [{'name': '可能性的艺术：比较政治学30讲'}]}]},
-   {'name': '人物传记',
-    'children': [{'name': '4☆',
-      'children': [{'name': '史蒂夫·乔布斯传'},
-       {'name': '人类群星闪耀时'},
-       {'name': '富兰克林自传'},
-       {'name': '苏东坡传'},
-       {'name': '曾国藩传'}]},
-     {'name': '5☆', 'children': [{'name': '邓小平时代'}]},
-     {'name': '3☆', 'children': [{'name': '贝佐斯传'}]}]},
-   {'name': '认知心理学',
-    'children': [{'name': '4☆', 'children': [{'name': '为什么大象不听话'}]}]},
-   {'name': '伦理学',
-    'children': [{'name': '4☆', 'children': [{'name': '何为良好生活'}]}]},
-   {'name': '认知神经科学',
-    'children': [{'name': '4☆',
-      'children': [{'name': '大脑传'}, {'name': '神经的逻辑'}, {'name': '脑与意识'}]},
-     {'name': '5☆', 'children': [{'name': '追寻记忆的痕迹'}, {'name': '有序'}]},
-     {'name': '3☆', 'children': [{'name': '大脑帝国'}]}]},
-   {'name': '心理学',
-    'children': [{'name': '3☆', 'children': [{'name': '思考，快与慢'}]},
-     {'name': '5☆',
-      'children': [{'name': '幸福的勇气'},
-       {'name': '被讨厌的勇气'},
-       {'name': '发现心流'},
-       {'name': '象与骑象人'}]}]},
-   {'name': '语言学',
-    'children': [{'name': '5☆', 'children': [{'name': '语言学的邀请'}]}]},
-   {'name': '哲学',
-    'children': [{'name': '5☆', 'children': [{'name': '西方哲学十五讲'}]}]}]},
- {'name': '实用类',
-  'itemStyle': {'color': colors[0]},
-  'children': [{'name': '学习方法',
-    'children': [{'name': '5☆', 'children': [{'name': '精准学习'}]},
-     {'name': '3☆', 'children': [{'name': '如何阅读一本书'}]},
-     {'name': '4☆',
-      'children': [{'name': '学习之道'}, {'name': '卡片笔记写作法：如何实现从阅读到写作'}]}]},
-   {'name': '工作技能',
-    'children': [{'name': '3☆', 'children': [{'name': '华为战略管理法'}]},
-     {'name': '5☆',
-      'children': [{'name': '绝不是靠运气'},
-       {'name': '幕后产品'},
-       {'name': '如何开会不添堵'}]}]},
-   {'name': '管理思想',
-    'children': [{'name': '4☆',
-      'children': [{'name': '管理的实践'}, {'name': '德鲁克管理思想精要'}]}]},
-   {'name': '生活技巧',
-    'children': [{'name': '5☆',
-      'children': [{'name': '四千周：凡人的时间管理'},
-       {'name': '圆圈正义'},
-       {'name': '掌控习惯'}]},
-     {'name': '4☆', 'children': [{'name': '正念禅修'}, {'name': '幽默感：成为更受欢迎的人'}]},
-     {'name': '3☆', 'children': [{'name': '孤独的150个信念'}]}]},
-   {'name': '思维逻辑',
-    'children': [{'name': '☆', 'children': [{'name': '黑客与画家'}]},
-     {'name': '3☆', 'children': [{'name': '麦肯锡结构化战略思维'}]},
-     {'name': '4☆', 'children': [{'name': '系统之美'}]}]},
-   {'name': '信息架构',
-    'children': [{'name': '4☆', 'children': [{'name': '随意搜寻'}]}]},
-   {'name': '人生规划',
-    'children': [{'name': '3☆',
-      'children': [{'name': '对生命说是'},
-       {'name': '你要如何衡量你的人生'},
-       {'name': '如何达成目标'},
-       {'name': '原则'},
-       {'name': '设计你的工作和人生'},
-       {'name': '斯坦福大学人生设计课'}]},
-     {'name': '5☆',
-      'children': [{'name': '规划最好的一年'},
-       {'name': '只管去做     '},
-       {'name': '小强升职记'}]},
-     {'name': '4☆', 'children': [{'name': '远见:如何规划职业生涯3大阶段'}]}]},
-   {'name': '理财',
-    'children': [{'name': '4☆',
-      'children': [{'name': '财务自由之路III'}, {'name': '财务自由之路II'}]},
-     {'name': '5☆', 'children': [{'name': '财务自由之路（全三册）'}, {'name': '小狗钱钱'}]}]},
-   {'name': '沟通技能',
-    'children': [{'name': '5☆',
-      'children': [{'name': '沟通的艺术：看入人里，看出人外'}, {'name': '即兴演讲'}]}]}]}];
+  {
+    "name": "个人成长",
+    'itemStyle': {'color': colors[1]},
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "share your work"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "认知觉醒：开启自我改变的原动力"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "心流"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "早起的奇迹"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "治愈",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "人生借阅室"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "教育",
+    'itemStyle': {'color': colors[2]},
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "我用阅读教育孩子"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "教出乐观的孩子：让孩子受用一生的幸福经典"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "家长最关注的100个教育问题"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "孩子：挑战"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "在游戏中给孩子美的启蒙"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "孩子你慢慢来"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "你当像鸟飞往你的山"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "卡尔·威特的教育"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "亲爱的安德烈"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "小说",
+    'itemStyle': {'color': colors[2]},
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "封神演义"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "命运"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "骆驼祥子"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "一个叫欧维的男人决定去死"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "不能承受的生命之轻"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "长安的荔枝"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "1984"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "杀死一只知更鸟"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "鼠疫"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "美丽新世界"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "局外人"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "许三观卖血记"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "老人与海"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "你当像鸟飞往你的山"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "房思琪的初恋乐园"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "无人生还"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "三体III"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "三体II"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "三体I"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "杂文",
+    'itemStyle': {'color': colors[2]},
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "皮囊"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "回忆录",
+    'itemStyle': {'color': colors[1]},
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "皮囊"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "快乐",
+    'itemStyle': {'color': colors[2]},
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "快乐美学：用平凡之物创造非凡快乐的10种方法"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "现实题材",
+    'itemStyle': {'color': colors[3]},
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "命运"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "侦探",
+    'itemStyle': {'color': colors[3]},
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "帷幕"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "谋杀启事"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "阳光下的罪恶"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "悬疑",
+    'itemStyle': {'color': colors[3]},
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "帷幕"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "谋杀启事"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "阳光下的罪恶"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "底牌"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "尼罗河上的惨案"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "ABC谋杀案"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "罗杰疑案"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "斯泰尔斯庄园奇案"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "宋慈洗冤笔记"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "东方快车谋杀案"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "无人生还"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "励志",
+    'itemStyle': {'color': colors[4]},
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "一生的财富：洛克菲勒写给儿子的38封信"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "书信",
+    'itemStyle': {'color': colors[4]},
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "一生的财富：洛克菲勒写给儿子的38封信"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "成功学",
+    'itemStyle': {'color': colors[2]},
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "一生的财富：洛克菲勒写给儿子的38封信"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "纳瓦尔宝典"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "思考致富"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "历史",
+    'itemStyle': {'color': colors[3]},
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "南京大屠杀：第二次世界大战中被遗忘的大浩劫"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "紫禁城的黄昏"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "我的前半生"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "齐如山回忆录：清宫史话"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "宫女谈往录：储秀宫里随侍慈禧八年"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "明朝那些事儿"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "中国历史",
+    'itemStyle': {'color': colors[3]},
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "南京大屠杀：第二次世界大战中被遗忘的大浩劫"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "我的前半生"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "齐如山回忆录：清宫史话"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "宫女谈往录：储秀宫里随侍慈禧八年"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "中国历代政治得失"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "明朝那些事儿"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "女性",
+    'itemStyle': {'color': colors[4]},
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "给一个未出生孩子的信"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "始于极限 "
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "看不见的女性"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "你当像鸟飞往你的山"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "82年生的金智英"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "房思琪的初恋乐园"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "儿童",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "给一个未出生孩子的信"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "窗边的小豆豆"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "童年的秘密"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "心理学",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "持续的幸福"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "蛤蟆先生去看心理医生"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "原生家庭"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "心流"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "思考致富"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "育儿",
+    "children": [
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "教出乐观的孩子：让孩子受用一生的幸福经典"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "家长最关注的100个教育问题"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "爱和自由"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "好妈妈胜过好老师"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "孩子：挑战"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "卡尔·威特的教育"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "童年的秘密"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "宝宝也是哲学家"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "积极心理学",
+    "children": [
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "教出乐观的孩子：让孩子受用一生的幸福经典"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "医学",
+    "children": [
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "和抑郁的自己聊聊吧"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "生命的反转：急重症科医生手记"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "抑郁",
+    "children": [
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "和抑郁的自己聊聊吧"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "记录",
+    "children": [
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "生命的反转：急重症科医生手记"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "清朝",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "紫禁城的黄昏"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "齐如山回忆录：清宫史话"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "宫女谈往录：储秀宫里随侍慈禧八年"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "俄国",
+    "children": []
+  },
+  {
+    "name": "社会心理学",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "亲密关系"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "社会性动物"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "哲学",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "悉达多"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "人生的智慧"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "论语"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "佛教",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "悉达多"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "印度",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "悉达多"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "传记",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "曾国藩传"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "经济",
+    "children": []
+  },
+  {
+    "name": "商业",
+    "children": []
+  },
+  {
+    "name": "信件",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "始于极限 "
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "社会科学",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "看不见的女性"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "理财",
+    "children": []
+  },
+  {
+    "name": "财商",
+    "children": []
+  },
+  {
+    "name": "财务",
+    "children": []
+  },
+  {
+    "name": "管理学",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "卓有成效的管理者"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "销售",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "信任五环"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "价值型销售"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "销售就是搞定人"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "销售就是要玩转情商"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "销售加速公式"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "价值竞争：以客户为中心的销售转型"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "逻辑学",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "简单的逻辑学"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "学习",
+    "children": [
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "刻意练习"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "效率",
+    "children": [
+      {
+        "name": "⭐⭐",
+        "children": [
+          {
+            "name": "刻意练习"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "搞定1：无压工作的艺术"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "每周工作4小时"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "幸福论",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "人生的智慧"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "政治学",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "中国历代政治得失"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "置身事内"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "中国",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "置身事内"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "反乌托邦",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "美丽新世界"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "近现代",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "许三观卖血记"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "美国文学",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "老人与海"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "写作",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "文心"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "卡片笔记写作法"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "阅读",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "文心"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "卡片笔记写作法"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "卡片盒",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "卡片笔记写作法"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "亲情",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "孩子你慢慢来"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "社科",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "原生家庭"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "美国小说",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "你当像鸟飞往你的山"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "家庭",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "你当像鸟飞往你的山"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "时间管理",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "奇特的一生"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "思想",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "娱乐至死"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "明朝",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "明朝那些事儿"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "韩国",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "82年生的金智英"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "中国古典文学",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "论语"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "三国演义"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "纪实",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "看见"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "散文随笔",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "瓦尔登湖"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "自由职业",
+    "children": [
+      {
+        "name": "⭐⭐⭐",
+        "children": [
+          {
+            "name": "每周工作4小时"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "明清小说",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "三国演义"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "战争",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "三国演义"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "科幻",
+    "children": [
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "三体III"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "三体II"
+          }
+        ]
+      },
+      {
+        "name": "⭐⭐⭐⭐",
+        "children": [
+          {
+            "name": "三体I"
+          }
+        ]
+      }
+    ]
+  }
+]
 for (let j = 0; j < data.length; ++j) {
   let level1 = data[j].children;
   for (let i = 0; i < level1.length; ++i) {
